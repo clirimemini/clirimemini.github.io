@@ -1,0 +1,15 @@
+{% if site.data.links %}
+<div id="links">
+	<a href="https://app.cobalt.io/cemini"><p>Cobalt Core</p></a>
+	<a href="https://hackerone.com/cela"><p>HackerOne</p></a>
+	<p>Other: 
+    {% assign sm = site.data.links %}
+    {% for entry in sm %}
+        {% assign key = entry | first %}
+        {% if sm[key].id %}
+            <a href="{{ sm[key].href }}{{ sm[key].id }}" title="{{ sm[key].title }}"><i class="fa {{ sm[key].fa-icon }}"></i></a>
+        {% endif %}
+    {% endfor %}
+    </p>
+</div>
+{% endif %}

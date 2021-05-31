@@ -1,0 +1,17 @@
+linkedin:
+  id: 'clirimemini'
+  href: 'https://linkedin.com/in/'
+  title: 'Linkedin'
+  fa-icon: 'fa-linkedin-square'
+  
+twitter:
+  id: '0xcela'
+  href: 'https://www.twitter.com/'
+  title: 'Twitter'
+  fa-icon: 'fa-twitter-square'
+
+github:
+  id: 'clirimemini'
+  href: 'https://github.com/'
+  title: 'GitHub'
+  fa-icon: 'fa-github-square'

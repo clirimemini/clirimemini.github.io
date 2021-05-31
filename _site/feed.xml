@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>/home/0xcela/</title>
+    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+</description>
+    <link>https://0xc.sh/</link>
+    <atom:link href="https://0xc.sh/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 31 May 2021 17:04:52 +0200</pubDate>
+    <lastBuildDate>Mon, 31 May 2021 17:04:52 +0200</lastBuildDate>
+    <generator>Jekyll v4.2.0</generator>
+    
+      <item>
+        <title>[External] Presentation Slides from Prishtina InfoSec Meetup #2 - featuring @spenkkkkk</title>
+        <description>
+</description>
+        <pubDate>Sat, 25 Jan 2020 00:00:00 +0100</pubDate>
+        <link>https://0xc.sh/2020-01/slides-infosec-meetup</link>
+        <guid isPermaLink="true">https://0xc.sh/2020-01/slides-infosec-meetup</guid>
+        
+        
+        <category>posts</category>
+        
+      </item>
+    
+      <item>
+        <title>[External] Bug Bounty - Information Disclosure through error message + WAF Bypass led to Local File Inclusion - featuring @spenkkkkk</title>
+        <description>
+</description>
+        <pubDate>Sat, 15 Jun 2019 00:00:00 +0200</pubDate>
+        <link>https://0xc.sh/2019-06/external-lfi</link>
+        <guid isPermaLink="true">https://0xc.sh/2019-06/external-lfi</guid>
+        
+        
+        <category>posts</category>
+        
+      </item>
+    
+      <item>
+        <title>[External] LiveHelperChat - Remote Code Execution via Vulnerable Theme Upload Function - featuring @spenkkkkk</title>
+        <description>
+</description>
+        <pubDate>Thu, 21 Jun 2018 00:00:00 +0200</pubDate>
+        <link>https://0xc.sh/2018-06/livehelperchat-rce</link>
+        <guid isPermaLink="true">https://0xc.sh/2018-06/livehelperchat-rce</guid>
+        
+        
+        <category>posts</category>
+        
+      </item>
+    
+  </channel>
+</rss>

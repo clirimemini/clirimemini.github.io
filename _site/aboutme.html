@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<head>
+  <title>/home/0xcela/about</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="author" content="Çlirim Emini">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="/assets/css/main.css" media="all">
+  <link rel="canonical" href="https://0xc.sh/aboutme">
+  <link rel="alternate" type="application/rss+xml" title="/home/0xcela/"
+    href="/feed.xml" />
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="/assets/img/favicon.png" type="image/x-icon" />
+  <link rel="icon" href="/assets/img/favicon.png" type="image/x-icon" />
+
+  <!-- font -->
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,400i" rel="stylesheet">
+  
+    
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+   
+
+</head>
+
+<body>
+  <div class="content">
+
+    <header class="header">
+
+  <div class="header_content">
+    <label class="theme_changer">
+      <input theme_toggle type="checkbox">
+      <div class="button"></div>
+    </label>
+    <a class="header_circle" href="/">
+      <img src="https://bestanimations.com/media/computers/875805913funny-computer-animated-gif-11.gif" alt="">
+    </a>
+    <span class="header_name">Çlirim Emini</span>
+    <span class="header_job">Cybersecurity</span>
+    <span class="header_mes"></span>
+
+    <nav class="nav">
+      
+      <ul class="nav_list">
+        <li class="nav_item">
+          <a href="/aboutme.html">about</a>
+        </li>
+      </ul>
+      
+      
+      
+      <ul class="nav_list">
+        <li class="nav_item">
+          <a href="/categories/posts" id="aa">posts
+            (3)</a>
+        </li>
+      </ul>
+      
+      
+      <ul class="nav_list">
+        <li class="nav_item">
+          <a href="/login.html">login</a>
+        </li>
+      </ul>
+      
+    </nav>
+  </div>
+
+</header>
+
+
+
+    <nav class="mobile_menu">
+
+  <ul class="nav_list">
+    
+    <li class="nav_item">
+      <a href="/aboutme.html">about</a>
+    </li>
+
+    
+    
+    
+
+    <li class="nav_item">
+      <a href="/categories/posts" id="aa">posts (3)</a>
+    </li>
+    
+
+    
+    <li class="nav_item">
+      <a href="/login.html">login</a>
+    </li>
+
+    
+  </ul>
+
+</nav>
+    
+    <main class="main">
+
+    <section class="aboutme">
+    <div class="post_content">
+    	<h1>About Me</h1>
+        <p>
+            Penetration Tester and Security Researcher focused on API & Web Application Security.
+            <br><br>
+        </p>
+        <h3>Links</h3>
+
+        
+<div id="links">
+	<a href="https://app.cobalt.io/cemini"><p>Cobalt Core</p></a>
+	<a href="https://hackerone.com/cela"><p>HackerOne</p></a>
+	<p>Other: 
+    
+    
+        
+        
+            <a href="https://linkedin.com/in/clirimemini" title="Linkedin"><i class="fa fa-linkedin-square"></i></a>
+        
+    
+        
+        
+            <a href="https://www.twitter.com/0xcela" title="Twitter"><i class="fa fa-twitter-square"></i></a>
+        
+    
+        
+        
+            <a href="https://github.com/clirimemini" title="GitHub"><i class="fa fa-github-square"></i></a>
+        
+    
+    </p>
+</div>
+
+
+    </div>
+</section>
+
+
+    </main>
+
+  </div>
+
+  <footer class="footer">
+  <div>
+    &copy; 2021 Çlirim Emini.
+    Powered by <a href="http://jekyllrb.com" target="_blank">Jekyll</a>.
+    Get this theme
+    <a href="https://github.com/starry99/catbook" target="_blank">here</a>.
+  </div>
+</footer>
+
+  <!-- js from https://codepen.io/MrGrigri/pen/XQmWBv -->
+
+<script>
+    const themePreference = () => {
+        const hasLocalStorage = localStorage.getItem('theme');
+        let supports = false;
+        let theme = 'dark';
+
+        if (hasLocalStorage === 'light') {
+            theme = 'light';
+        }
+        if (hasLocalStorage === 'dark') {
+            theme = 'dark';
+        }
+
+        if (window.matchMedia(`(prefers_color: dark)`).matches) {
+            theme = hasLocalStorage ? hasLocalStorage : 'dark';
+            supports = true;
+        };
+        if (window.matchMedia(`(prefers_color: light)`).matches) {
+            theme = hasLocalStorage ? hasLocalStorage : 'light';
+            supports = true;
+        };
+        if (window.matchMedia(`(prefers_color: no-preference)`).matches) {
+            theme = hasLocalStorage ? hasLocalStorage : 'none';
+            supports = true;
+        };
+
+        return {
+            supports,
+            theme
+        };
+    }
+
+    document.addEventListener('DOMContentLoaded', e => {
+        console.clear();
+
+        const userThemePreference = themePreference();
+        const toggle = document.querySelector('[theme_toggle]');
+        const html = document.documentElement;
+
+        const setTheme = () => {
+            switch (userThemePreference.theme) {
+                case 'dark':
+                    toggle.checked = true;
+                    html.classList.add('dark');
+                    html.classList.remove('light');
+                    break;
+                case 'light':
+                    toggle.checked = false;
+                    html.classList.remove('dark');
+                    html.classList.add('light');
+                    break;
+            }
+        }
+        setTheme();
+        toggle.addEventListener('click', e => {
+            if (toggle.checked) {
+                html.classList.add('dark');
+                html.classList.remove('light');
+                localStorage.setItem('theme', 'dark');
+            } else {
+                html.classList.remove('dark');
+                html.classList.add('light');
+                localStorage.setItem('theme', 'light');
+            }
+        }, false);
+    }, false);
+</script>
+
+</body>
+</html>

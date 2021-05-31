@@ -1,0 +1,45 @@
+
+title: /home/0xcela/ #Your awesome title
+email: #youremail@domain.com
+description: > # this means to ignore newlines until "baseurl"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+
+baseurl: # the subpath of the site
+url: https://0xc.sh # the base hostname & protocol for your site
+
+permalink: /:year-:month/:title
+timezone:
+
+favicon: /assets/img/favicon.png
+
+user:
+  name: Çlirim Emini
+  pic: https://bestanimations.com/media/computers/875805913funny-computer-animated-gif-11.gif
+  picAlt: 
+  job: Cybersecurity
+  aboutme: true # comment this out if you don't need the 'about' page.
+  login: true
+
+exclude:
+  - README.md
+  - LICENSE
+  - github
+
+defaults:
+  - scope:
+      path: "_posts"
+      type: posts
+    values:
+      layout: post
+      comment: true   
+
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+markdown: kramdown 
+
+# Filtering Content
+show_drafts: null
+limit_posts: 0
+future:      false
+unpublished: false
